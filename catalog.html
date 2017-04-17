@@ -9,26 +9,25 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
-				<a href="index.html">Device</a>
-			</div>
-			<form method="get" class="site-search">
+			<a class="header__logo">Device</a>
+			<form method="get" class="header__site-search">
 				<label>
 					<input type="search" name="site-search" placeholder="Поиск по сайту">
-					<button type="submit" name="">Найти</button>
 				</label>
+				<button type="submit" name="header__site-search__submit">Искать</button>
 			</form>
-			<div class="user">
-				<a href="#">Валентин Петухов</a>
-				<a href="#" class="logout">Выйти</a>
+			<div class="header__user">
+				<a href="#" class="header__user__profile">Валентин Петухов</a>
+				<a href="#" class="header__user__logout">Выйти</a>
 			</div>
-			<a href="#" class="compare">Сравнить</a>
-			<a href="#" class="basket">Корзина</a>
-			<nav>
+			<a href="#" class="header__compare">Сравнить</a>
+			<a href="#" class="header__basket">Корзина</a>
+			<nav class="header__nav">
 				<ul>
-					<li>
+					<li class="header__nav__item">
 						<a href="#">Каталог товаров</a>
-						<div>
+						<div class="header__nav__catalog">
+							<!-- header__nav__item__catalog? -->
 							<ul>
 								<li><a href="#">Виртуальная реальность</a></li>
 								<li><a href="#">Моноподы для селфи</a></li>
@@ -43,25 +42,25 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li class="header__nav__item"><a href="#">Доставка</a></li>
+					<li class="header__nav__item"><a href="#">Гарантия</a></li>
+					<li class="header__nav__item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	
-	<main>
+
+	<main class="main">
 		<div class="container">
 			<h1>Моноподы для селфи</h1>
-			<ul class="breadcrumbs">
+			<ul class="main__breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="#">Каталог товаров</a></li>
 				<li><a href="#" class="active">Моноподы для селфи</a></li>
 			</ul>
-			<section class="shop">
-				<form method="post" class="filter">
-					<span>Фильтр:</span>
+			<section class="main__shop">
+				<form method="post" class="main__shop__filter">
+					<span class="main__shop__filter__title">Фильтр:</span>
 					<fieldset>
 						<legend>Стоимость</legend>
 						<label>
@@ -107,64 +106,65 @@
 							Нет
 						</label>
 					</fieldset>
-					<button type="submit" name="show" value="show">Показать</button>
+					<button type="submit" name="show" value="show" class="main__shop__filter__show">Показать</button>
 				</form>
-				<section class="sort">
-					<span>Сортировка:</span>
-					<ul>
-						<li><a href="#">По цене</a></li>
-						<li><a href="#">По типу</a></li>
-						<li><a href="#">По популярности</a></li>
+				<section class="main__sort">
+					<span class="main__sort__title">Сортировка:</span>
+					<ul class="main__sort__list">
+						<li class="main__sort__list__item"><a href="#">По цене</a></li>
+						<li class="main__sort__list__item"><a href="#">По типу</a></li>
+						<li class="main__sort__list__item"><a href="#">По популярности</a></li>
 					</ul>
-					<div>
+					<div class="main__sort__show">
 						<a href="#">По нарастанию</a>
 						<a href="#">По убыванию</a>
 					</div>
 				</section>
-				<section class="catalog">
+				<section class="main__catalog">
 					<!--figure.catalog-item*4>img[src="#" alt="селфи палка" width="360" height="380"]+figcaption>h3+span
 						разметка как фото и подписка к нему-->
-					<section class="catalog-item">
+					<section class="main__catalog__item">
 						<img src="#" alt="селфи палка" width="360" height="380">
 						<h3>Любительская селфи-палка</h3>
-						<span class="price">500 руб.</span>
-						<div>
+						<span class="main__catalog__item__price">500 руб.</span>
+						<div class="main__catalog__item__add">
 							<a href="#">В корзину</a>
 							<a href="#">Добавить к сравнению</a>
 						</div>
 					</section>
-					<section class="catalog-item">
+					<section class="main__catalog__item">
 						<img src="#" alt="селфи палка" width="360" height="380">
 						<h3>Профессиональная селфи палка</h3>
-						<span class="price">1 500 руб.</span>
-						<div>
+						<span class="main__catalog__item__price">1 500 руб.</span>
+						<div class="main__catalog__item__add">
 							<a href="#">В корзину</a>
 							<a href="#">Добавить к сравнению</a>
 						</div>
 					</section>
-					<section class="catalog-item">
+					<section class="main__catalog__item">
 						<img src="#" alt="селфи палка" width="360" height="380">
 						<h3>Непотопляемая селфи палка</h3>
-						<span class="price">2 500 руб.</span>
-						<div>
+						<span class="main__catalog__item__price">2 500 руб.</span>
+						<div class="main__catalog__item__add">
 							<a href="#">В корзину</a>
 							<a href="#">Добавить к сравнению</a>
 						</div>
 					</section>
-					<section class="catalog-item">
+					<section class="main__catalog__item">
 						<img src="#" alt="селфи палка" width="360" height="380">
 						<h3>Селфи палка &laquo;Следуй за мной&raquo;</h3>
-						<span class="price">4 900 руб.</span>
-						<div>
+						<span class="main__catalog__item__price">4 900 руб.</span>
+						<div class="main__catalog__item__add">
 							<a href="#">В корзину</a>
 							<a href="#">Добавить к сравнению</a>
 						</div>
 					</section>
 				</section>
 				<div class="paginator">
+				<!-- Надо как-то назвать ссылки-->
 					<a href="#">Назад</a>
 					<ul>
-						<li><a href="#" class="active">1</a></li>
+						<li><a href="#" class="paginator__active">1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
 					</ul>
@@ -175,34 +175,27 @@
 	</main>
 	<footer>
 		<div class="container">
-			<section class="footer-top">
-				<div class="logo">
-					<a href="index.html">Device</a>
-				</div>
-				<div class="user">
-					<a href="#"></a>
-				</div>
-				<a href="#" class="footer-compare">Сравнить</a>
-				<a href="#" class="footer-basket">Корзина</a>
-			</section>
-			<section class="footer-middle">
-				<!--В CSS изменить порядок следования с помощью флексов-->
+			<a class="footer__logo">Device</a>
+			<div class="user">
+				<a href="#">Войти</a>
+			</div>
+			<a href="#" class="footer__compare">Сравнить</a>
+			<a href="#" class="footer__basket">Корзина</a>
+			<section class="footer__contacts">
 				<p>г. Москва, ул. Строителей, 15</p>
-				<p>Тел: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
 				<ul>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантия</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
+				<p>Тел: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
 			</section>
-			<section class="copyright-and-social">
-				<ul class="social">
-					<li><a href="#" class="fb">facebook</a></li>
-					<li><a href="#" class="inst">instagram</a></li>
-					<li><a href="#" class="tw">twitter</a></li>
-				</ul>
-				<a href="https://htmlacademy.ru/">Htmlacademy.ru</a>
-			</section>
+			<div class="footer__social">
+				<a href="#" class="footer__social__fb">facebook</a>
+				<a href="#" class="footer__social__inst">instagram</a>
+				<a href="#" class="footer__social__tw">twitter</a>
+			</div>
+			<a href="https://htmlacademy.ru/" class="footer__htmlacademy">Htmlacademy.ru</a>
 		</div>
 	</footer>
 </body>
