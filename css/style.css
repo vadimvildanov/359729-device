@@ -1,0 +1,29 @@
+body {
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+h1,
+h2,
+carousel__list__item__slogan {
+	font-family: Gilroy;
+	font-size: 47px;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.logo {
+	width: 163px;
+	height: 36px;
+	font-family: Gilroy;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+}

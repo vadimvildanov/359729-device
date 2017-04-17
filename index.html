@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Девайс</title>
+	<link href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -26,7 +27,6 @@
 					<li class="nav__item">
 						<a href="#">Каталог товаров</a>
 						<div class="nav__catalog">
-							<!-- header__nav__item__catalog? -->
 							<ul>
 								<li><a href="#">Виртуальная реальность</a></li>
 								<li><a href="#">Моноподы для селфи</a></li>
@@ -53,12 +53,10 @@
 			<div class="carousel">
 				<ul class="carousel__list">
 					<li class="carousel__list__item">
-						<img width="560" height="500" src="#" alt="Палка для селфи!">
+						<img width="560" height="500" src="img/slider-slide-1.png" alt="Палка для селфи!">
 						<div class="carousel__list__item__slogan">Делай селфи как Бен Стиллер!</div>
 						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 						<a href="#" class="carousel__list__item__more">Подробнее</a>
-						<!--div.info>div.info__item>span.info__data+span.info__name
-							Как вариант замены списку-->
 						<ul class="carousel__list__item__info">
 							<li>
 								<span>8,5 м</span> Длина палки
@@ -73,7 +71,7 @@
 
 					</li>
 					<li class="carousel__list__item">
-						<img width="560" height="500" src="#" alt="Палка для селфи!">
+						<img width="560" height="500" src="img/slider-slide-2.png" alt="Палка для селфи!">
 						<div class="slogan">Худеем правильно!</div>
 						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<a href="#" class="carousel__list__item__more">Подробнее</a>
@@ -84,7 +82,7 @@
 						</ul>
 					</li>
 					<li class="carousel__list__item">
-						<img width="560" height="500" src="#" alt="Палка для селфи!">
+						<img width="560" height="500" src="img/slider-slide-3.png" alt="Палка для селфи!">
 						<div class="slogan">Порхает как бабочка, жалит как вчела!</div>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<a href="#" class="carousel__list__item__more">Подробнее</a>
@@ -104,30 +102,30 @@
 					<label><input type="radio" name="carousel__control__item" value="03"></label>
 				</form>
 			</div>
-			<section class="popular">
-				<article class="popular__item">
-					<img src="#" alt="Очки виртуальной реальности" width="160" height="160">
-					<h2>Виртуальная реальность</h2>
+			<section class="popular-list">
+				<article class="popular-list__item">
+					<a href="#" class="popular-list__item popular-list__item_vr"></a>
+					<h3>Виртуальная реальность</h3>
 				</article>
-				<article class="popular__item">
-					<img src="#" alt="Моноподы для селфи" width="160" height="160">
-					<h2>Моноподы для селфи</h2>
+				<article class="popular-list__item">
+					<a href="#" class="popular-list__item popular-list__item_monopode"></a>
+					<h3>Моноподы для селфи</h3>
 				</article>
-				<article class="popular__item">
-					<img src="#" alt="Экшн камеры" width="160" height="160">
-					<h2>Экшн-камеры</h2>
+				<article class="popular-list__item">
+					<a href="#" class="popular-list__item popular-list__item_action-camera"></a>
+					<h3>Экшн-камеры</h3>
 				</article>
-				<article class="popular__item">
-					<img src="#" alt="Фитнес-браслеты" width="160" height="160">
-					<h2>Фитнес-браслеты</h2>
+				<article class="popular-list__item">
+					<a href="#" class="popular-list__item popular-list__item_fitness-band"></a>
+					<h3>Фитнес-браслеты</h3>
 				</article>
-				<article class="popular__item">
-					<img src="#" alt="Умные часы" width="160" height="160">
-					<h2>Умные часы</h2>
+				<article class="popular-list__item">
+					<a href="#" class="popular-list__item popular-list__item_smart-clock"></a>
+					<h3>Умные часы</h3>
 				</article>
-				<article class="popular__item">
-					<img src="#" alt="Квадрокоптеры" width="160" height="160">
-					<h2>Квадрокоптеры</h2>
+				<article class="popular-list__item">
+					<a href="#" class="popular-list__item popular-list__item_quadrocopter"></a>
+					<h3>Квадрокоптеры</h3>
 				</article>
 			</section>
 			<section class="service">
@@ -154,16 +152,16 @@
 			<section class="brands">
 				<ul>
 					<li class="brands__item">
-						<a href="#"><img src="#" alt="dji" width="260" height="100"></a>
+						<a href="#"><img src="img/dji-logo.jpg" alt="dji" width="260" height="100"></a>
 					</li>
 					<li class="brands__item">
-						<a href="#"><img src="#" alt="SP Gadgets" width="260" height="100"></a>
+						<a href="#"><img src="img/spgadget-logo.jpg" alt="SP Gadgets" width="260" height="100"></a>
 					</li>
 					<li class="brands__item">
-						<a href="#"><img src="#" alt="GoPro" width="260" height="100"></a>
+						<a href="#"><img src="img/gopro-logo.jpg" alt="GoPro" width="260" height="100"></a>
 					</li>
 					<li class="brands__item">
-						<a href="#"><img src="#" alt="Vive" width="260" height="100"></a>
+						<a href="#"><img src="img/vive-logo.jpg" alt="Vive" width="260" height="100"></a>
 					</li>
 				</ul>
 			</section>
@@ -182,7 +180,7 @@
 				<section class="about__contact">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<a href="#"><img src="#" width="560" height="220" alt="Проезд к нашему офису"></a>
+					<a href="#"><img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15"></a>
 					<a href="#">Напишите нам</a>
 				</section>
 			</section>
