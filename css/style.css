@@ -1,13 +1,25 @@
-body {
-	font-family: "Open Sans";
-	font-size: 15px;
+@font-face {
+	font-family: Open-Sans;
+	src: url(../fonts/OpenSans-Light.ttf);
 	font-weight: 300;
-	line-height: 30px;
 }
 
-h1,
-h2,
-carousel__list__item__slogan {
+@font-face {
+	font-family: Gilroy;
+	src: url(../fonts/Gilroy-ExtraBold.otf);
+}
+
+body {
+	font-family: Open-Sans;
+	font-size: 15px;
+	line-height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+.page-title,
+.section-title {
+    color: #000000;
 	font-family: Gilroy;
 	font-size: 47px;
 	font-weight: 700;
@@ -27,3 +39,4 @@ h3 {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
