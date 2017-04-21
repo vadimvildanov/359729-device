@@ -8,24 +8,24 @@
 </head>
 
 <body>
-	<header class="page-heaeder">
-		<div class="container">
+	<div class="container">
+		<header class="page-header clearfix">
 			<a class="logo logo--header">Device</a>
 			<form method="get" class="search">
 				<label>
-					<input class="search__input" type="search" name="search__input" placeholder="Поиск по сайту">
-				</label>
+	    				<input class="search__input" type="search" name="search__input" placeholder="Поиск по сайту">
+	    			</label>
 				<button class="button search--button" type="submit" name="search__submit">Искать</button>
 			</form>
-			<div class="user-nav">
-				<a href="#" class="user-nav__link user-nav__link--log">Войти</a>
-			    <a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
-			    <a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
-            </div>
-			<nav class="main-nav">
+			<div class="user-nav user-nav__header">
+				<a href="#" class="user-nav__link user-nav__link--log user-nav__link--log--header">Войти</a>
+				<a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
+				<a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
+			</div>
+			<nav class="main-nav clearfix">
 				<ul class="nav-list">
 					<li class="nav-list__item nav-list__item--catalog">
-						<a class="main-nav__link" href="#">Каталог товаров</a>
+						<a class="nav-list__link" href="#">Каталог товаров</a>
 						<div class="nav-catalog">
 							<ul class="nav-catalog__list">
 								<li><a class="nav-catalog__link" href="#">Виртуальная реальность</a></li>
@@ -41,74 +41,77 @@
 							</ul>
 						</div>
 					</li>
-					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
-					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
 				</ul>
 			</nav>
-		</div>
-	</header>
-	<main class="main">
-		<div class="container">
+		</header>
+	</div>
+
+	<div class="container">
+		<main class="main">
 			<div class="carousel">
 				<ul class="carousel-list">
-					<li class="carousel-item">
-						<img width="560" height="500" src="img/slider-slide-1.png" alt="Палка для селфи!">
-						<div class="section-title">Делай селфи как Бен Стиллер!</div>
-						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a href="#" class="carousel-item__more">Подробнее</a>
-						<ul class="carousel-item__info-list">
-							<li>
-								<span>8,5 м</span> Длина палки
-							</li>
-							<li>
-								<span>5 кг</span> Вес палки
-							</li>
-							<li>
-								<span>Карбон</span> Материал
-							</li>
-						</ul>
-
+					<li class="carousel-item clearfix">
+						<img class="carousel-item__img" width="384" height="486" src="img/slider-slide-1.png" alt="Палка для селфи!">
+						<div class="carousel-content">
+							<div class="section-title">Делай селфи, как Бен Стиллер!</div>
+							<p class="carousel__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<a href="#" class="carousel-item__more">Подробнее</a>
+							<ul class="carousel-info-list">
+								<li class="carousel-info-list__item">
+									<span class="carousel-info-list__main">8,5 м</span> Длина палки
+								</li>
+								<li class="carousel-info-list__item">
+									<span class="carousel-info-list__main">5 кг</span> Вес палки
+								</li>
+								<li class="carousel-info-list__item">
+									<span class="carousel-info-list__main">Карбон</span> Материал
+								</li>
+							</ul>
+						</div>
 					</li>
-					<li class="carousel-item">
-						<img src="img/slider-slide-2.png" alt="Палка для селфи!">
+					<li class="carousel-item clearfix">
+						<img class="carousel-item__img" src="img/slider-slide-2.png" alt="Палка для селфи!">
 						<div class="section-title">Худеем правильно!</div>
-						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+						<p class="carousel__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<a href="#" class="carousel__list__item__more">Подробнее</a>
-						<ul class="carousel__list__item__info">
-							<li>
-								<span>48 часов</span> Без подзарядки
+						<ul class="carousel-item-info">
+							<li class="carousel-info-list__item">
+								<span class="carousel-info-list__main">48 часов</span> Без подзарядки
 							</li>
 						</ul>
 					</li>
-					<li class="carousel-item">
-						<img src="img/slider-slide-3.png" alt="Палка для селфи!">
+					<li class="carousel-item clearfix">
+						<img class="carousel-item__img" src="img/slider-slide-3.png" alt="Палка для селфи!">
 						<div class="section-title">Порхает как бабочка, жалит как вчела!</div>
-						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+						<p class="carousel__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<a href="#" class="carousel__list__item__more">Подробнее</a>
-						<ul class="carousel__list__item__info">
-							<li>
-								<span>800 м</span> Дальность полета
+						<ul class="carousel-item-info">
+							<li class="carousel-info-list__item">
+								<span class="carousel-info-list__main">800 м</span> Дальность полета
 							</li>
-							<li>
-								<span>50 м</span> Радиус поражения
+							<li class="carousel-info-list__item">
+								<span class="carousel-info-list__main">50 м</span> Радиус поражения
 							</li>
 						</ul>
 					</li>
 				</ul>
-				<form class="carousel-control">
-					<label class="carousel-control__label">
-					    <input class="carousel-control__radio" type="radio" name="carousel-control__item" value="01">
-				    </label>
-					<label class="carousel-control__label">
-					    <input class="carousel-control__radio" type="radio" name="carousel-control__item" value="02">
-					</label>
-					<label class="carousel-control__label">
-					    <input class="carousel-control__radio" type="radio" name="carousel-control__item" value="03">
-					</label>
-				</form>
+				<div class="carousel-control">
+					<div class="carousel-radio-group">
+						<input class="carousel-control__radio" type="radio" name="carousel-control__item" value="01">
+						<input class="carousel-control__radio" type="radio" name="carousel-control__item" value="02">
+						<input class="carousel-control__radio" type="radio" name="carousel-control__item" value="03">
+					</div>
+					<div class="carousel-radio-group-custom">
+						<div class="carousel-control__radio-custom"></div>
+						<div class="carousel-control__radio-custom"></div>
+						<div class="carousel-control__radio-custom"></div>
+					</div>
+				</div>
 			</div>
-			<section class="popular">
+			<section class="popular clearfix">
 				<article class="popular-item">
 					<a href="#" class="popular__link popular__link--vr"></a>
 					<h3 class="popular__title">Виртуальная реальность</h3>
@@ -123,7 +126,7 @@
 				</article>
 				<article class="popular-item">
 					<a href="#" class="popular__link popular__link--fitness-band"></a>
-					<h3 class="popular-title">Фитнес-браслеты</h3>
+					<h3 class="popular__title">Фитнес-браслеты</h3>
 				</article>
 				<article class="popular-item">
 					<a href="#" class="popular__link popular__link--smart-clock"></a>
@@ -134,17 +137,18 @@
 					<h3 class="popular__title">Квадрокоптеры</h3>
 				</article>
 			</section>
-			<section class="service">
+			<section class="service clearfix">
 				<div class="service-control">
-					<label class="service-control__label">
-					    <input type="radio" name="service-control__radio" class="button button--service">Доставка
-					</label>
-					<label class="service-control__label">
-					    <input type="radio" name="service-control__radio" class="button button--service">Гарантия
-					</label>
-					<label class="service-control__label">
-					    <input type="radio" name="service-control__radio" class="button button--service">Кредит
-					</label>
+					<div class="service-radio-group">
+						<input type="radio" name="service-control__radio" class="button button--service">
+						<input type="radio" name="service-control__radio" class="button button--service">
+						<input type="radio" name="service-control__radio" class="button button--service">
+					</div>
+					<div class="service-radio-custom-group">
+						<div class="service-control__custom-radio">Доставка</div>
+						<div class="service-control__custom-radio">Гарантия</div>
+						<div class="service-control__custom-radio">Кредит</div>
+					</div>
 				</div>
 				<div class="service-list">
 					<div class="service-list__item">
@@ -162,13 +166,21 @@
 				</div>
 			</section>
 			<section class="brands">
-				<a href="#" class="brands__link"><img src="img/dji-logo.jpg" alt="dji" width="260" height="100"></a>
-				<a href="#" class="brands__link"><img src="img/spgadget-logo.jpg" alt="SP Gadgets" width="260" height="100"></a>
-				<a href="#" class="brands__link"><img src="img/gopro-logo.jpg" alt="GoPro" width="260" height="100"></a>
-				<a href="#" class="brands__link"><img src="img/vive-logo.jpg" alt="Vive" width="260" height="100"></a>
+				<a href="#" class="brands__link">
+					<img src="img/dji-logo.jpg" alt="dji" width="260" height="100">
+				</a>
+				<a href="#" class="brands__link">
+					<img src="img/spgadget-logo.jpg" alt="SP Gadgets" width="260" height="100">
+				</a>
+				<a href="#" class="brands__link">
+					<img src="img/gopro-logo.jpg" alt="GoPro" width="260" height="100">
+				</a>
+				<a href="#" class="brands__link">
+					<img src="img/vive-logo.jpg" alt="Vive" width="260" height="100">
+				</a>
 			</section>
-			<section class="about">
-				<section class="descriprion">
+			<section class="about clearfix">
+				<section class="description">
 					<h2 class="section-title">О нас</h2>
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p>Можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
@@ -186,34 +198,30 @@
 					<a href="#" class="button">Напишите нам</a>
 				</section>
 			</section>
+		</main>
+	</div>
+	<footer class="page-footer container">
+		<a class="logo logo--footer">Device</a>
+		<div class="user-nav">
+			<a href="#" class="user-nav__link user-nav__link--log">Войти</a>
+			<a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
+			<a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
 		</div>
-	</main>
-	<footer class="page-footer">
-		<div class="container">
-		    <section>
-			    <a class="logo logo--footer">Device</a>
-			    <div class="user-nav">
-			    	<a href="#" class="user-nav__link user-nav__link--log">Войти</a>
-			        <a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
-			        <a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
-                </div>
-            </section>
-			<section class="contacts">
-				<p>г. Москва, ул. Строителей, 15</p>
-                <div>
-				    <a href="#" class="button">Доставка</a>
-				    <a href="#" class="button">Гарантия</a>
-				    <a href="#" class="button">Контакты</a>
-				</div>
-				<p>Тел: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-			</section>
-			<div class="social">
-				<a href="#" class="social__link social__link--fb">facebook</a>
-				<a href="#" class="social__link social__link--inst">instagram</a>
-				<a href="#" class="social__link social__link--tw">twitter</a>
-			</div>
-			<a href="https://htmlacademy.ru/" class="htmlacademy">Htmlacademy.ru</a>
+		<section class="contacts clearfix">
+			<p class="contacts-address">г. Москва, ул. Строителей, 15</p>
+			<p class="contacts-info">
+				<a href="#" class="button">Доставка</a>
+				<a href="#" class="button">Гарантия</a>
+				<a href="#" class="button">Контакты</a>
+			</p>
+			<p class="contacts-phone">Тел: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+		</section>
+		<div class="social">
+			<a href="#" class="social__link social__link--fb">facebook</a>
+			<a href="#" class="social__link social__link--inst">instagram</a>
+			<a href="#" class="social__link social__link--tw">twitter</a>
 		</div>
+		<a href="https://htmlacademy.ru/" class="htmlacademy">Htmlacademy.ru</a>
 	</footer>
 </body>
 
