@@ -9,15 +9,20 @@
 	src: url(../fonts/Gilroy-ExtraBold.otf);
 }
 
-* {
+html {
 	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
 }
 
 .container {
 	width: 1200px;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .clearfix::after {
@@ -34,7 +39,10 @@ body {
 	margin: 0;
 	padding-top: 40px;
 	position: relative;
-	background: url(../device-index.jpg) 50% 0 no-repeat;
+}
+
+.button {
+	display: inline-block;
 }
 
 .page-title,
@@ -42,10 +50,31 @@ body {
 	color: #000000;
 	font-family: Gilroy, serif;
 	font-size: 47px;
-	font-weight: 700;
-	line-height: 60px;
+	font-weight: bold;
+	line-height: 54px;
+	letter-spacing: 0.016em;
 	margin-bottom: 40px;
-	color: red;
+	padding: 0px;
+}
+
+.carousel-title {
+	color: #000000;
+	font-family: Gilroy, serif;
+	font-size: 47px;
+	font-weight: bold;
+	line-height: 54px;
+	letter-spacing: 0.016em;
+	margin-bottom: 22px;
+}
+
+.service-title {
+	color: #000000;
+	font-family: Gilroy, serif;
+	font-size: 47px;
+	font-weight: bold;
+	line-height: 54px;
+	letter-spacing: 0.016em;
+	margin-bottom: 29px;
 }
 
 h3 {
@@ -65,7 +94,7 @@ h3 {
 
 .logo {
 	width: 163px;
-	height: 36px;
+	min-height: 36px;
 	font-family: Gilroy, serif;
 	font-size: 48px;
 	font-weight: 700;
@@ -83,16 +112,17 @@ h3 {
 .search {
 	width: 500px;
 	float: left;
+	padding: 0px;
 }
 
 .user-nav {
-	width: 500px;
 	text-align: right;
 	margin-bottom: 35px;
+	width: 500px;
+	float: right;
 }
 
 .user-nav__header {
-	float: right;
 }
 
 .user-nav__link {
@@ -108,9 +138,6 @@ h3 {
 
 .user-nav__link--log {
 	text-align: center;
-}
-
-.user-nav__link--log--header {
 	float: left;
 }
 
@@ -158,7 +185,6 @@ h3 {
 	font-weight: bold;
 	letter-spacing: 3.5px;
 	font-family: Gilroy;
-	color: red;
 }
 
 .nav-catalog {
@@ -247,15 +273,20 @@ h3 {
 }
 
 .popular {
+	width: auto;
+	white-space: nowrap;
+	margin-top: -10px;
 	margin-bottom: 167px;
+	font-size: 0px;
 }
 
 .popular-item {
 	display: inline-block;
 	width: 160px;
-	padding-top: 170px;
+	padding-top: 178px;
 	margin-left: 40px;
-	float: left;
+	white-space: normal;
+	vertical-align: top;
 }
 
 .popular-item:first-child {
@@ -268,14 +299,14 @@ h3 {
 }
 
 .service {
-	background: red;
-	opacity: 0.5;
 	min-height: 288px;
 	margin-bottom: 95px;
 }
 
 
 .service-control {
+	position: relative;
+	top: -67px;
 	width: 280px;
 	min-height: 170px;
 	float: left;
@@ -284,10 +315,11 @@ h3 {
 
 .service-control__custom-radio {
 	display: inline-block;
-	min-width: 170px;
+	min-width: 158px;
 	font-family: Gilroy;
 	font-size: 18px;
 	font-weight: 700;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	margin-bottom: 34px;
 	text-align: center;
@@ -297,6 +329,8 @@ h3 {
 	float: right;
 	width: 760px;
 	min-height: 170px;
+	position: relative;
+	top: -67px;
 }
 
 .service-list__item:nth-child(2),
@@ -316,7 +350,7 @@ h3 {
 .brands {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 85px;
+	margin-bottom: 95px;
 }
 
 .description {
@@ -324,32 +358,61 @@ h3 {
 	float: left;
 }
 
+.description__text {
+	margin-bottom: 30px;
+}
+
+.delivery-list {
+	margin-top: 76px;
+	padding-left: 32px;
+	list-style: none;
+}
+
+.delivery-list__item {
+	margin-bottom: 24px;	
+	color: #000;
+	font-family: Gilroy;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
 .contact {
 	width: 560px;
 	float: right;
 }
 
+.contact__text {
+	margin-bottom: 35px;
+}
+
 .about {
-	margin-bottom: 177px;
+}
+
+.button--more-about {
+	margin-top: 50px;
+}
+
+.button--write-us {
+	margin-top: 65px;
 }
 
 .page-footer {
+	margin-top: 85px;
 	padding-top: 65px;
-	background: red;
-	opacity: 0.5;
 	min-height: 320px;
 	position: relative;
 }
 
 .logo--footer {
 	position: absolute;
-	left: 17px;
+	left: 15px;
 	top: 69px;
 }
 
-.user-nav {
+.user-nav--footer {
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 
 .contacts {
