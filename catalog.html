@@ -8,21 +8,21 @@
 </head>
 
 <body>
-	<header class="page-heaeder">
-		<div class="container">
+	<div class="container">
+		<header class="page-header">
 			<a class="logo logo--header" href="index.html">Device</a>
 			<form method="get" class="search">
 				<label>
-					<input class="search__input" type="search" name="search__input" placeholder="Поиск по сайту">
-				</label>
+						<input class="search__input" type="search" name="search__input" placeholder="Поиск по сайту">
+					</label>
 				<button class="button search--button" type="submit" name="search__submit">Искать</button>
 			</form>
 			<div class="user-nav">
 				<a href="#" class="user-nav__link user-nav__link--profile">Валентин Петухов</a>
 				<a href="#" class="user-nav__link user-nav__link--log">Выйти</a>
-			    <a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
-			    <a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
-            </div>
+				<a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
+				<a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
+			</div>
 			<nav class="main-nav">
 				<ul class="nav-list">
 					<li class="nav-list__item nav-list__item--catalog">
@@ -42,72 +42,77 @@
 							</ul>
 						</div>
 					</li>
-					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
-					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
 				</ul>
 			</nav>
-		</div>
-	</header>
+		</header>
+	</div>
 
-	<main class="main">
+	<main class="main clearfix">
 		<div class="container">
-			<h1 class="page-title">Моноподы для селфи</h1>
-			<ul class="breadcrumbs">
-				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
-				<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Моноподы для селфи</a></li>
-			</ul>
-			<section class="shop">
-				<span class="filter-name filter-name--shop">Фильтр:</span>
-				<form method="post" class="filter">
-					<fieldset class="filter__group">
-						<legend class="filter__subtitle">Стоимость</legend>
-						<label class="filter__number">
-							<input type="number" name="cost">
-							От 0
-						</label>
-						<label class="filter__number">
-							<input type="number" name="cost">
-							До 5000
-						</label>
-					</fieldset>
-					<fieldset class="filter__group">
-						<legend class="filter__subtitle">Цвет</legend>
-						<label class="filter__label filter__label--color">
-							<input type="checkbox" name="color" value="black" class="filter__checkbox">
-							Черный
-						</label>
-						<label class="filter__label filter__label--color">
-							<input type="checkbox" name="color" value="white" class="filter__checkbox">
-							Белый
-						</label>
-						<label class="filter__label filter__label--color">
-							<input type="checkbox" name="color" value="blue" class="filter__checkbox">
-							Синий
-						</label>
-						<label class="filter__label filter__label--color">
-							<input type="checkbox" name="color" value="red" class="filter__checkbox">
-							Красный
-						</label>
-						<label class="filter__label filter__label--color">
-							<input type="checkbox" name="color" value="pink" class="filter__checkbox">
-							Розовый
-						</label>
-					</fieldset>
-					<fieldset class="filter__group">
-						<legend class="filter__subtitle">Bluetooth</legend>
-						<label class="filter__label filter__label--bluetooth">
-							<input type="radio" name="bluetooth" value="with-bluetooth" class="filter__radio">
-							Есть
-						</label>
-						<label class="filter__label filter__label--bluetooth">
-							<input type="radio" name="bluetooth" value="without-bluetooth" class="filter__radio">
-							Нет
-						</label>
-					</fieldset>
-					<button type="submit" name="show" value="filter__show" class="button">Показать</button>
-				</form>
+			<header class="content-header">
+				<h1 class="page-title">Моноподы для селфи</h1>
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Моноподы для селфи</a></li>
+				</ul>
+			</header>
+		</div>
+			<section class="shop clearfix">
+				<section class="filter">
+					<span class="filter-name filter-name--shop">Фильтр:</span>
+					<form method="post" class="filter-form">
+						<fieldset class="filter__group">
+							<legend class="filter__subtitle">Стоимость</legend>
+							<label class="filter__number">
+									<input type="number" name="cost">
+									От 0
+								</label>
+							<label class="filter__number">
+									<input type="number" name="cost">
+									До 5000
+								</label>
+						</fieldset>
+						<fieldset class="filter__group">
+							<legend class="filter__subtitle">Цвет</legend>
+							<label class="filter__label filter__label--color">
+									<input type="checkbox" name="color" value="black" class="filter__checkbox">
+									Черный
+								</label>
+							<label class="filter__label filter__label--color">
+									<input type="checkbox" name="color" value="white" class="filter__checkbox">
+									Белый
+								</label>
+							<label class="filter__label filter__label--color">
+									<input type="checkbox" name="color" value="blue" class="filter__checkbox">
+									Синий
+								</label>
+							<label class="filter__label filter__label--color">
+									<input type="checkbox" name="color" value="red" class="filter__checkbox">
+									Красный
+								</label>
+							<label class="filter__label filter__label--color">
+									<input type="checkbox" name="color" value="pink" class="filter__checkbox">
+									Розовый
+								</label>
+						</fieldset>
+						<fieldset class="filter__group">
+							<legend class="filter__subtitle">Bluetooth</legend>
+							<label class="filter__label filter__label--bluetooth">
+									<input type="radio" name="bluetooth" value="with-bluetooth" class="filter__radio">
+									Есть
+								</label>
+							<label class="filter__label filter__label--bluetooth">
+									<input type="radio" name="bluetooth" value="without-bluetooth" class="filter__radio">
+									Нет
+								</label>
+						</fieldset>
+						<button type="submit" name="show" value="filter__show" class="button">Показать</button>
+					</form>
+				</section>
 				<section class="sort">
 					<span class="filter-name">Сортировка:</span>
 					<ul class="sort-list">
@@ -158,45 +163,40 @@
 						</div>
 					</article>
 				</section>
-				<div class="paginator">
-				<!-- Надо как-то назвать ссылки-->
-					<a href="#" class="button paginator__link">Назад</a>
-					<ul class="paginator__numbers">
-						<li><a href="#" class="button paginator__link paginator__link--active">1</a></li>
-						<li><a href="#" class="button paginator__link">2</a></li>
-						<li><a href="#" class="button paginator__link">3</a></li>
+				<div class="catalog-paginator">
+					<!-- Надо как-то назвать ссылки-->
+					<a href="#" class="button catalog-paginator__link catalog-paginator__prev">Назад</a>
+					<ul class="catalog-paginator-numbers">
+						<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link paginator__link--active">1</a></li>
+						<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link">2</a></li>
+						<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link">3</a></li>
 					</ul>
-					<a href="#" class="button paginator__link">Вперед</a>
+					<a href="#" class="button catalog-paginator__link catalog-paginator__next">Вперед</a>
 				</div>
 			</section>
-		</div>
 	</main>
-	<footer class="page-footer">
-		<div class="container">
-            <section>
-			    <a class="logo">Device</a>
-			    <div class="user-nav">
-			    	<a href="#" class="user-nav__log">Войти</a>
-			        <a href="#" class="user-nav__compare">Сравнить</a>
-			        <a href="#" class="user-nav__basket">Корзина</a>
-                </div>
-            </section>
-			<section class="contacts">
-				<p>г. Москва, ул. Строителей, 15</p>
-                <div>
-				    <a href="#" class="button">Доставка</a>
-				    <a href="#" class="button">Гарантия</a>
-				    <a href="#" class="button">Контакты</a>
-				</div>
-				<p>Тел: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-			</section>
-			<div class="social">
-				<a href="#" class="social__link social__link--fb">facebook</a>
-				<a href="#" class="social__link social__link--inst">instagram</a>
-				<a href="#" class="social__link social__link--tw">twitter</a>
-			</div>
-			<a href="https://htmlacademy.ru/" class="htmlacademy">Htmlacademy.ru</a>
+	<footer class="page-footer container clearfix">
+		<a class="logo logo--footer">Device</a>
+		<div class="user-nav user-nav--footer">
+			<a href="#" class="user-nav__link user-nav__link--log-footer">Войти</a>
+			<a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
+			<a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
 		</div>
+		<section class="contacts clearfix">
+			<p class="contacts-address">г. Москва, ул. Строителей, 15</p>
+			<p class="contacts-info">
+				<a href="#" class="button">Доставка</a>
+				<a href="#" class="button">Гарантия</a>
+				<a href="#" class="button">Контакты</a>
+			</p>
+			<p class="contacts-phone">Тел: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+		</section>
+		<div class="social">
+			<a href="#" class="social__link social__link--fb">facebook</a>
+			<a href="#" class="social__link social__link--inst">instagram</a>
+			<a href="#" class="social__link social__link--tw">twitter</a>
+		</div>
+		<a href="https://htmlacademy.ru/" class="htmlacademy">Htmlacademy.ru</a>
 	</footer>
 </body>
 
