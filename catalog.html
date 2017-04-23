@@ -11,17 +11,21 @@
 	<div class="container">
 		<header class="page-header">
 			<a class="logo logo--header" href="index.html">Device</a>
-			<form method="get" class="search">
-				<label>
-						<input class="search__input" type="search" name="search__input" placeholder="Поиск по сайту">
-					</label>
-				<button class="button search--button" type="submit" name="search__submit">Искать</button>
-			</form>
-			<div class="user-nav">
-				<a href="#" class="user-nav__link user-nav__link--profile">Валентин Петухов</a>
-				<a href="#" class="user-nav__link user-nav__link--log">Выйти</a>
-				<a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
-				<a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
+			<div class="page-header-middle">
+				<form method="get" class="search">
+					<label>
+							<input class="search__input" type="search" name="search__input" placeholder="Поиск по сайту">
+						</label>
+					<button class="button search--button" type="submit" name="search__submit">Искать</button>
+				</form>
+				<div class="user-nav user-nav--header">
+					<div class="user-profile">
+						<a href="#" class="user-nav__link user-block__link--profile">Валентин Петухов</a>
+						<a href="#" class="user-nav__link user-block__link--log">Выйти</a>
+					</div>
+					<a href="#" class="user-nav__link user-nav__link--compare">Сравнить</a>
+					<a href="#" class="user-nav__link user-nav__link--basket">Корзина</a>
+				</div>
 			</div>
 			<nav class="main-nav">
 				<ul class="nav-list">
@@ -42,15 +46,15 @@
 							</ul>
 						</div>
 					</li>
-					<li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
 	</div>
 
-	<main class="main clearfix">
+	<main class="main">
 		<div class="container">
 			<header class="content-header">
 				<h1 class="page-title">Моноподы для селфи</h1>
@@ -61,7 +65,7 @@
 				</ul>
 			</header>
 		</div>
-			<section class="shop clearfix">
+			<section class="shop">
 				<section class="filter">
 					<span class="filter-name filter-name--shop">Фильтр:</span>
 					<form method="post" class="filter-form">
@@ -113,65 +117,66 @@
 						<button type="submit" name="show" value="filter__show" class="button">Показать</button>
 					</form>
 				</section>
-				<section class="sort">
-					<span class="filter-name">Сортировка:</span>
-					<ul class="sort-list">
-						<li class="sort-list__item"><a class="sort-list__link sort-list__link--active" href="#">По цене</a></li>
-						<li class="sort-list__item"><a class="sort-list__link" href="#">По типу</a></li>
-						<li class="sort-list__item"><a class="sort-list__link" href="#">По популярности</a></li>
-					</ul>
-					<div class="sort-control">
-						<a href="#" class="sort-control__link">По нарастанию</a>
-						<a href="#" class="sort-control__link sort-control__link--active">По убыванию</a>
-					</div>
-				</section>
-				<section class="catalog">
-					<article class="product">
-						<img src="img/catalog-item-1.jpg" alt="селфи палка" width="360" height="380">
-						<h3 class="product__title">Любительская селфи-палка</h3>
-						<span class="product__price">500 руб.</span>
-						<div class="product-add">
-							<a class="button" href="#">В корзину</a>
-							<a href="#" class="product-add__link">Добавить к сравнению</a>
+				<div class="shop-middle">
+					<section class="sort">
+						<span class="filter-name">Сортировка:</span>
+						<ul class="sort-list">
+							<li class="sort-list__item"><a class="sort-list__link sort-list__link--active" href="#">По цене</a></li>
+							<li class="sort-list__item"><a class="sort-list__link" href="#">По типу</a></li>
+							<li class="sort-list__item"><a class="sort-list__link" href="#">По популярности</a></li>
+						</ul>
+						<div class="sort-control">
+							<a href="#" class="sort-control__link">По нарастанию</a>
+							<a href="#" class="sort-control__link sort-control__link--active">По убыванию</a>
 						</div>
-					</article>
-					<article class="product">
-						<img src="img/catalog-item-2.jpg" alt="селфи палка" width="360" height="380">
-						<h3 class="product__title">Профессиональная селфи палка</h3>
-						<span class="product__price">1 500 руб.</span>
-						<div class="product-add">
-							<a class="button" href="#">В корзину</a>
-							<a href="#" class="product-add__link">Добавить к сравнению</a>
+					</section>
+					<section class="catalog">
+						<article class="product">
+							<img src="img/catalog-item-1.jpg" alt="селфи палка" width="360" height="380">
+							<h3 class="product__title">Любительская селфи-палка</h3>
+							<span class="product__price">500 руб.</span>
+							<div class="product-add">
+								<a class="button" href="#">В корзину</a>
+								<a href="#" class="product-add__link">Добавить к сравнению</a>
+							</div>
+						</article>
+						<article class="product">
+							<img src="img/catalog-item-2.jpg" alt="селфи палка" width="360" height="380">
+							<h3 class="product__title">Профессиональная селфи палка</h3>
+							<span class="product__price">1 500 руб.</span>
+							<div class="product-add">
+								<a class="button" href="#">В корзину</a>
+								<a href="#" class="product-add__link">Добавить к сравнению</a>
+							</div>
+						</article>
+						<article class="product">
+							<img src="img/catalog-item-3.jpg" alt="селфи палка" width="360" height="380">
+							<h3 class="product__title">Непотопляемая селфи палка</h3>
+							<span class="product__price">2 500 руб.</span>
+							<div class="product-add">
+								<a class="button" href="#">В корзину</a>
+								<a href="#" class="product-add__link">Добавить к сравнению</a>
+							</div>
+						</article>
+						<article class="product">
+							<img class="product__img--new" src="img/catalog-item-4.jpg" alt="селфи палка" width="360" height="380">
+							<h3 class="product__title">Селфи палка &laquo;Следуй за мной&raquo;</h3>
+							<span class="product__price">4 900 руб.</span>
+							<div class="product-add">
+								<a class="button" href="#">В корзину</a>
+								<a href="#" class="product-add__link">Добавить к сравнению</a>
+							</div>
+						</article>				
+						<div class="catalog-paginator">
+							<a href="#" class="button catalog-paginator__link catalog-paginator__prev">Назад</a>
+							<ul class="catalog-paginator-numbers">
+								<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link paginator__link--active">1</a></li>
+								<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link">2</a></li>
+								<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link">3</a></li>
+							</ul>
+							<a href="#" class="button catalog-paginator__link catalog-paginator__next">Вперед</a>
 						</div>
-					</article>
-					<article class="product">
-						<img src="img/catalog-item-3.jpg" alt="селфи палка" width="360" height="380">
-						<h3 class="product__title">Непотопляемая селфи палка</h3>
-						<span class="product__price">2 500 руб.</span>
-						<div class="product-add">
-							<a class="button" href="#">В корзину</a>
-							<a href="#" class="product-add__link">Добавить к сравнению</a>
-						</div>
-					</article>
-					<article class="product">
-						<img class="product__img--new" src="img/catalog-item-4.jpg" alt="селфи палка" width="360" height="380">
-						<h3 class="product__title">Селфи палка &laquo;Следуй за мной&raquo;</h3>
-						<span class="product__price">4 900 руб.</span>
-						<div class="product-add">
-							<a class="button" href="#">В корзину</a>
-							<a href="#" class="product-add__link">Добавить к сравнению</a>
-						</div>
-					</article>
-				</section>
-				<div class="catalog-paginator">
-					<!-- Надо как-то назвать ссылки-->
-					<a href="#" class="button catalog-paginator__link catalog-paginator__prev">Назад</a>
-					<ul class="catalog-paginator-numbers">
-						<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link paginator__link--active">1</a></li>
-						<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link">2</a></li>
-						<li class="catalog-paginator-numbers__item"><a href="#" class="button catalog-paginator__link">3</a></li>
-					</ul>
-					<a href="#" class="button catalog-paginator__link catalog-paginator__next">Вперед</a>
+					</section>
 				</div>
 			</section>
 	</main>
