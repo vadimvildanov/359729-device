@@ -53,15 +53,15 @@ body {
 }
 
 .button,
-.logo {
-	font-family: Gilroy;
-	font-weight: 700;
-	text-transform: uppercase
+.button__catalog-paginator {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none
 }
 
 .button {
-	color: #000;
-	text-decoration: none;
+	font-family: Gilroy;
+	font-weight: 700;
 	display: inline-block;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -71,9 +71,9 @@ body {
 	background: 0 0;
 	-ms-flex-item-align: start;
 	align-self: flex-start;
-	font-size: 18px;
 	letter-spacing: .2em;
-	line-height: 20px
+	line-height: 20px;
+	font-size: 18px
 }
 
 .button:before {
@@ -87,9 +87,26 @@ body {
 	left: 0
 }
 
+.button__catalog-paginator {
+	font-size: 16px
+}
+
+.button__catalog-paginator,
+.logo,
+.page__title {
+	font-family: Gilroy;
+	font-weight: 700
+}
+
+.page__title {
+	color: #000;
+	font-size: 47px
+}
+
 .logo {
 	font-size: 48px;
 	line-height: 48px;
+	text-transform: uppercase;
 	letter-spacing: .015em
 }
 
@@ -564,6 +581,7 @@ body {
 .footer {
 	min-height: 323px;
 	padding-top: 60px;
+	margin-top: auto;
 	background: #464646;
 	color: #fff
 }
@@ -642,5 +660,195 @@ body {
 .footer-info__link,
 .footer-tel__link {
 	color: #fff;
+	text-decoration: none
+}
+
+.catalog-main {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+.main-header {
+	padding-right: 60px;
+	padding-left: 60px;
+	margin-top: 50px;
+	margin-bottom: 42px
+}
+
+.shop {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 1200px;
+	-webkit-box-flex: 2;
+	-ms-flex-positive: 2;
+	flex-grow: 2
+}
+
+.shop__title {
+	color: #000;
+	font-family: Gilroy;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	line-height: 70px
+}
+
+.shop__title--filter {
+	background: #dcdcdc;
+	-ms-flex-item-align: stretch;
+	-ms-grid-row-align: stretch;
+	align-self: stretch;
+	padding-left: calc(100% - 268px)
+}
+
+.shop-filter {
+	width: calc(50% - 252px);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	background: #efefef
+}
+
+.shop-content {
+	width: calc(50% + 252px)
+}
+
+.shop-sort {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-left: 72px;
+	background: #ebebeb
+}
+
+.shop-catalog {
+	padding-left: 72px;
+	padding-top: 68px;
+	padding-bottom: 75px
+}
+
+.shop-catalog-list {
+	width: 760px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start
+}
+
+.catalog-paginator-numbers,
+.shop-catalog-list,
+.shop-catalog-paginator {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.shop-catalog-paginator {
+	width: 760px;
+	height: 70px;
+	margin-top: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #ebebeb
+}
+
+.catalog-paginator-numbers {
+	min-width: 86px
+}
+
+.product {
+	min-height: 435px;
+	width: 360px;
+	position: relative
+}
+
+.product__title {
+	color: #000;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: 700;
+	width: 260px
+}
+
+.product-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.product-add {
+	display: none
+}
+
+.product__img {
+	margin-bottom: 15px
+}
+
+.filter-form {
+	width: 200px;
+	margin-right: 68px
+}
+
+.filter-group,
+.sort-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+.sort-nav {
+	width: 560px;
+	max-height: 70px;
+	-webkit-box-orient: horizontal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-left: 50px
+}
+
+.sort-control__link,
+.sort-list__link {
+	line-height: 70px;
+	color: #000;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
 	text-decoration: none
 }
