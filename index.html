@@ -3,7 +3,8 @@
 
 <head>
 	<title>device</title>
-	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
 </head>
 
 <body>
@@ -15,26 +16,26 @@
 					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--header" href="#">Корзина</a></nav>
 			</div>
 			<nav class="main-nav">
-				<ul class="main-nav-list">
-					<li class="main-nav-list__item main-nav-list__item--catalog"><a class="main-nav-list__link" href="#">Каталог товаров</a>
-						<div class="main-nav-catalog">
-							<ul class="main-nav-catalog-list">
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Виртуальная реальность</a></li>
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Моноподы для селфи</a></li>
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Экшн камеры</a></li>
+				<ul class="nav-list">
+					<li class="nav-list__item nav-list__item--catalog"><a class="nav-list__link" href="#">Каталог товаров</a>
+						<div class="nav-catalog">
+							<ul class="nav-catalog-list">
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Виртуальная реальность</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Моноподы для селфи</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Экшн камеры</a></li>
 							</ul>
-							<ul class="main-nav-catalog-list">
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Фитнес-браслеты</a></li>
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Умные часы</a></li>
+							<ul class="nav-catalog-list">
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Фитнес-браслеты</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Умные часы</a></li>
 							</ul>
-							<ul class="main-nav-catalog-list">
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Квадрокоптеры</a></li>
+							<ul class="nav-catalog-list">
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Квадрокоптеры</a></li>
 							</ul>
 						</div>
 					</li>
-					<li class="main-nav-list__item"><a class="main-nav-list__link" href="#">Доставка</a></li>
-					<li class="main-nav-list__item"><a class="main-nav-list__link" href="#">Гарантия</a></li>
-					<li class="main-nav-list__item"><a class="main-nav-list__link" href="#">Контакты</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -47,10 +48,10 @@
 						<div class="carousel-item-content">
 							<div class="carousel-item__title">Делай селфи, как&#160;Бен Стиллер!</div>
 							<p class="carousel-item__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p><a class="button carousel-item__more" href="#">Подробнее</a>
-							<ul class="carousel-item-info-list">
-								<li class="carousel-item-info-list-item"><span class="carousel-item-info-list-item__main">8,5 м</span> Длина&#160;палки</li>
-								<li class="carousel-item-info-list-item"><span class="carousel-item-info-list-item__main">5 кг</span> Вес&#160;палки</li>
-								<li class="carousel-item-info-list-item"><span class="carousel-item-info-list-item__main">Карбон</span> Материал</li>
+							<ul class="carousel-info">
+								<li class="carousel-info__item"><span class="carousel-info__main">8,5 м</span> Длина&#160;палки</li>
+								<li class="carousel-info__item"><span class="carousel-info__main">5 кг</span> Вес&#160;палки</li>
+								<li class="carousel-info__item"><span class="carousel-info__main">Карбон</span> Материал</li>
 							</ul>
 						</div>
 					</li>
@@ -58,8 +59,8 @@
 						<div class="carousel-item-content">
 							<div class="carousel-item__title">Худеем<br>правильно!</div>
 							<p class="carousel-item__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p><a class="button carousel-item__more" href="#">Подробнее</a>
-							<ul class="carousel-item-info-list">
-								<li class="carousel-item-info-list-item"><span class="carousel-item-info-list-item__main">48 часов</span> без&#160;подзарядки</li>
+							<ul class="carousel-info">
+								<li class="carousel-info__item"><span class="carousel-info__main">48 часов</span> без&#160;подзарядки</li>
 							</ul>
 						</div>
 					</li>
@@ -67,19 +68,22 @@
 						<div class="carousel-item-content">
 							<div class="carousel-item__title">Порхает&#160;как&#160;бабочка, жалит как пчела!</div>
 							<p class="carousel-item__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p><a class="button carousel-item__more" href="#">Подробнее</a>
-							<ul class="carousel-item-info-list">
-								<li class="carousel-item-info-list-item"><span class="carousel-item-info-list-item__main">800 м</span> Длина&#160;полета</li>
-								<li class="carousel-item-info-list-item"><span class="carousel-item-info-list-item__main">50 м</span> Радиус&#160;поражения</li>
+							<ul class="carousel-info">
+								<li class="carousel-info__item"><span class="carousel-info__main">800 м</span> Длина&#160;полета</li>
+								<li class="carousel-info__item"><span class="carousel-info__main">50 м</span> Радиус&#160;поражения</li>
 							</ul>
 						</div>
 					</li>
 				</ul>
 				<div class="carousel-control">
-					<div class="carousel-control-radio-group"><input class="carousel-control-radio-group__radio" type="radio" name="carousel-control__item" /><input class="carousel-control-radio-group__radio" type="radio" name="carousel-control__item" /><input class="carousel-control-radio-group__radio" type="radio" name="carousel-control__item" /></div>
-					<div class="carousel-control-radio-group-custom">
-						<div class="carousel-control-radio-group-custom__custom"></div>
-						<div class="carousel-control-radio-group-custom__custom"></div>
-						<div class="carousel-control-radio-group-custom__custom"></div>
+					<div class="carousel-radio-group">
+						<input class="carousel-control__radio" type="radio" name="carousel-control__item" />
+						<input class="carousel-control__radio" type="radio" name="carousel-control__item" />
+						<input class="carousel-control__radio" type="radio" name="carousel-control__item" /></div>
+					<div class="carousel-radio-custom">
+						<div class="carousel-control__custom"></div>
+						<div class="carousel-control__custom"></div>
+						<div class="carousel-control__custom"></div>
 					</div>
 				</div>
 			</div>

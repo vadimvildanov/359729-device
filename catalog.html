@@ -3,8 +3,8 @@
 
 <head>
 	<title>device</title>
-	<link href="css/style.css" rel="stylesheet" />
-	<meta charset="utf-8" />
+	<link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
 </head>
 
 <body>
@@ -16,26 +16,26 @@
 					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--header" href="#">Корзина</a></nav>
 			</div>
 			<nav class="main-nav">
-				<ul class="main-nav-list">
-					<li class="main-nav-list__item main-nav-list__item--catalog"><a class="main-nav-list__link" href="#">Каталог товаров</a>
-						<div class="main-nav-catalog">
-							<ul class="main-nav-catalog-list">
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Виртуальная реальность</a></li>
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Моноподы для селфи</a></li>
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Экшн камеры</a></li>
+				<ul class="nav-list">
+					<li class="nav-list__item nav-list__item--catalog"><a class="nav-list__link" href="#">Каталог товаров</a>
+						<div class="nav-catalog">
+							<ul class="nav-catalog-list">
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Виртуальная реальность</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Моноподы для селфи</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Экшн камеры</a></li>
 							</ul>
-							<ul class="main-nav-catalog-list">
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Фитнес-браслеты</a></li>
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Умные часы</a></li>
+							<ul class="nav-catalog-list">
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Фитнес-браслеты</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Умные часы</a></li>
 							</ul>
-							<ul class="main-nav-catalog-list">
-								<li class="main-nav-catalog-list__item"><a class="main-nav-catalog-list__link" href="#">Квадрокоптеры</a></li>
+							<ul class="nav-catalog-list">
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Квадрокоптеры</a></li>
 							</ul>
 						</div>
 					</li>
-					<li class="main-nav-list__item"><a class="main-nav-list__link" href="#">Доставка</a></li>
-					<li class="main-nav-list__item"><a class="main-nav-list__link" href="#">Гарантия</a></li>
-					<li class="main-nav-list__item"><a class="main-nav-list__link" href="#">Контакты</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Доставка</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Гарантия</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -48,17 +48,19 @@
 			</header>
 		</div>
 		<section class="shop">
-			<section class="shop-filter"><span class="shop__title shop__title--filter">Фильтр</span>
-				<form class="filter-form" method="post">
+			<div class="left-column">
+				<section class="shop-filter"><span class="shop__title shop__title--filter">Фильтр</span>
+					<form class="filter-form" method="post">
+						<fieldset class="filter-group">
+							<legend class="filter__subtitle">Стоимость</legend><label class="filter__number"><input type="number"/>От 0</label><label class="filter__number"><input type="number"/>До 5000</label></fieldset>
 					<fieldset class="filter-group">
-						<legend class="filter__subtitle">Стоимость</legend><label class="filter__number"><input type="number"/>От 0</label><label class="filter__number"><input type="number"/>До 5000</label></fieldset>
-					<fieldset class="filter-group">
-						<legend class="filter__subtitle">Цвет</legend><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="black"/>Черный</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="white"/>Белый</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="blue"/>Синий</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="red"/>Красный</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="pink"/>Розовый</label></fieldset>
-					<fieldset class="filter-group">
-						<legend class="filter__subtitle">Bluetooth</legend><label class="filter-label"><input class="filter__radio" type="radio" name="bluetooth" value="with-bluetooth"/>Есть</label><label class="filter-label"><input class="filter__radio" type="radio" name="bluetooth" value="without-bluetooth"/>Нет</label></fieldset>
-				</form>
-			</section>
-			<div class="shop-content">
+							<legend class="filter__subtitle">Цвет</legend><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="black"/>Черный</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="white"/>Белый</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="blue"/>Синий</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="red"/>Красный</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="pink"/>Розовый</label></fieldset>
+						<fieldset class="filter-group">
+							<legend class="filter__subtitle">Bluetooth</legend><label class="filter-label"><input class="filter__radio" type="radio" name="bluetooth" value="with-bluetooth"/>Есть</label><label class="filter-label"><input class="filter__radio" type="radio" name="bluetooth" value="without-bluetooth"/>Нет</label></fieldset>
+					</form>
+				</section>
+			</div>
+			<div class="right-column">
 				<section class="shop-sort"><span class="shop__title">Сортировка:</span>
 					<nav class="sort-nav">
 						<div class="sort-list"><a class="sort-list__link" href="#">По цене</a><a class="sort-list__link" href="#">По типу</a><a class="sort-list__link" href="#">По популярности</a></div>
