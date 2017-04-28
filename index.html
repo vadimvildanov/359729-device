@@ -11,9 +11,9 @@
 	<div class="container">
 		<header class="header"><a class="logo logo--header">device</a>
 			<div class="header-middle">
-				<form class="search"><input type="search" /><button class="search__button">Искать</button></form>
+				<form class="search-form"><input class="search-form__input" placeholder="Поиск по сайту" type="search" /><button class="search__button">Найти</button></form>
 				<nav class="user-nav user-nav--header">
-					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--header" href="#">Корзина</a></nav>
+					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--header" href="#">Корзина</a></nav>
 			</div>
 			<nav class="main-nav">
 				<ul class="nav-list">
@@ -88,24 +88,54 @@
 				</div>
 			</div>
 			<section class="popular">
-				<article class="popular-item">
-					<h2 class="popular-item__title">Виртуальная реальность</h2>
-				</article>
-				<article class="popular-item">
-					<h2 class="popular-item__title">Моноподы для&#160;селфи</h2>
-				</article>
-				<article class="popular-item">
-					<h2 class="popular-item__title">Экшн-камеры</h2>
-				</article>
-				<article class="popular-item">
-					<h2 class="popular-item__title">Фитнес-браслеты</h2>
-				</article>
-				<article class="popular-item">
-					<h2 class="popular-item__title">Умные часы</h2>
-				</article>
-				<article class="popular-item">
-					<h2 class="popular-item__title">Квадрокоптеры</h2>
-				</article>
+				<a class="popular-link" href="#">
+					<article class="popular-item popular-item--vr">
+						<div class="popular-img-block">
+							<img class="popular__img" src="img/VR.png" alt="vr">
+						</div>
+						<h2 class="popular-item__title">Виртуальная реальность</h2>
+					</article>
+				</a>
+				<a class="popular-link" href="#">
+					<article class="popular-item">
+						<div class="popular-img-block">
+							<img class="popular__img" src="img/monopode.png" alt="monopode">
+						</div>
+						<h2 class="popular-item__title">Моноподы для&#160;селфи</h2>
+					</article>
+				</a>
+				<a class="popular-link" href="#">
+					<article class="popular-item">
+						<div class="popular-img-block">
+							<img class="popular__img" src="img/action-camera.png">
+						</div>
+						<h2 class="popular-item__title">Экшн-камеры</h2>
+					</article>
+				</a>
+				<a class="popular-link" href="#">
+					<article class="popular-item">
+						<div class="popular-img-block">
+							<img class="popular__img" src="img/fitness-band.png">
+						</div>
+						<h2 class="popular-item__title">Фитнес-браслеты</h2>
+					</article>
+				</a>
+				<a class="popular-link" href="#">
+					<article class="popular-item">
+						<div class="popular-img-block">
+							<img class="popular__img" src="img/smart-clock.png">
+						</div>
+						<h2 class="popular-item__title">Умные часы</h2>
+					</article>
+				</a>
+				<a class="popular-link" href="#">
+					<article class="popular-item">
+						<div class="popular-img-block">
+							<img class="popular__img" src="img/quadrocopter.png">
+						</div>
+						<h2 class="popular-item__title">Квадрокоптеры</h2>
+					</article>
+				</a>
 			</section>
 		</div>
 		<section class="service">
@@ -134,10 +164,10 @@
 		</section>
 		<div class="container">
 			<section class="brands">
-				<a href="#"><img src="#" width="260" height="100" alt="Dji" /></a>
-				<a href="#"><img src="#" width="260" height="100" alt="SP Gadgets" /></a>
-				<a href="#"><img src="#" width="260" height="100" alt="GoPro" /></a>
-				<a href="#"><img src="#" width="260" height="100" alt="Vive" /></a>
+				<a href="#"><img class="brands__img" src="img/dji-logo.jpg" width="260" height="100" alt="Dji" /></a>
+				<a href="#"><img class="brands__img" src="img/spgadget-logo.jpg" width="260" height="100" alt="SP Gadgets" /></a>
+				<a href="#"><img class="brands__img" src="img/gopro-logo.jpg" width="260" height="100" alt="GoPro" /></a>
+				<a href="#"><img class="brands__img" src="img/vive-logo.jpg" width="260" height="100" alt="Vive" /></a>
 			</section>
 			<section class="description">
 				<section class="about">
@@ -152,7 +182,7 @@
 				<section class="contacts">
 					<h2 class="contacts__title">Контакты</h2>
 					<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<a class="contacts-map"><img class="contacts-map__img" src="#" width="560" height="222" alt="г. Москва, ул. Строителей, 15" /></a><a class="description--button button" href="#">Напишите нам</a></section>
+					<a class="contacts-map"><img class="contacts-map__img" src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15" /></a><a class="description--button button" href="#">Напишите нам</a></section>
 			</section>
 		</div>
 	</main>
@@ -160,7 +190,7 @@
 		<div class="container footer-container">
 			<div class="footer-top"><a class="logo logo--footer">Device</a>
 				<nav class="user-nav user-nav--footer">
-					<div class="user-nav-profile user-nav-profile--footer"><a class="user-nav-profile__link user-nav-profile__link--footer" href="#">Войти</a></div><a class="user-nav__link user-nav__link--footer" href="#">Сравнить</a><a class="user-nav__link user-nav__link--footer" href="#">Корзина</a></nav>
+					<div class="user-nav-profile user-nav-profile--footer"><a class="user-nav-profile__link user-nav-profile__link--footer" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--footer" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--footer" href="#">Корзина</a></nav>
 			</div>
 			<div class="footer-middle">
 				<p class="footer-address">г. Москва, ул. Строителей, 15</p>
