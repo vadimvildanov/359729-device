@@ -2,17 +2,20 @@
   font-family: Open-Sans;
   font-weight: 300;
 
-  src: url(../fonts/OpenSans-Light.woff);
+  src: url(../fonts/OpenSans-Light.woff) 					format('woff'),
+		url(../fonts/OpenSans-Light.ttf) format("ttf");
 }
 
 @font-face {
   font-family: Gilroy;
-	src: url(../fonts/Gilroyextrabold.woff);
+	src: url(../fonts/Gilroyextrabold.woff) 				format("woff"),
+		url(../fonts/Gilroyextrabold.ttf) format("ttf");
 }
 
 @font-face {
 	font-family: Gilroy-light;
-	src: url(../fonts/Gilroylight.woff);
+	src: url(../fonts/Gilroylight.woff) format("woff"),
+		url(../fonts/Gilroylight.ttf) format("ttf");
 }
 
 html {
