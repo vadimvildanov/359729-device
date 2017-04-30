@@ -43,11 +43,14 @@
 	<main class="index-main">
 		<div class="container">
 			<div class="carousel">
+					<input class="carousel-control__radio" id="slide-1" type="radio" name="carousel-control__item" checked />
+					<input class="carousel-control__radio" id="slide-2" type="radio" name="carousel-control__item" />
+					<input class="carousel-control__radio" id="slide-3" type="radio" name="carousel-control__item" />
 				<ul class="carousel-slider">
 					<li class="carousel-item"><img class="carousel-item__img" src="img/slider-slide-1.png" />
 						<div class="carousel-item-content">
 							<div class="carousel-item__title">Делай селфи, как&#160;Бен Стиллер!</div>
-							<p class="carousel-item__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p><a class="button carousel-item__more" href="#">Подробнее</a>
+							<p class="carousel-item__text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5&nbsp;килограмм.</p><a class="button carousel-item__more" href="#">Подробнее</a>
 							<ul class="carousel-info">
 								<li class="carousel-info__item"><span class="carousel-info__main">8,5 м</span> Длина&#160;палки</li>
 								<li class="carousel-info__item"><span class="carousel-info__main">5 кг</span> Вес&#160;палки</li>
@@ -76,15 +79,9 @@
 					</li>
 				</ul>
 				<div class="carousel-control">
-					<div class="carousel-radio-group">
-						<input class="carousel-control__radio" type="radio" name="carousel-control__item" />
-						<input class="carousel-control__radio" type="radio" name="carousel-control__item" />
-						<input class="carousel-control__radio" type="radio" name="carousel-control__item" /></div>
-					<div class="carousel-radio-custom">
-						<div class="carousel-control__custom"></div>
-						<div class="carousel-control__custom"></div>
-						<div class="carousel-control__custom"></div>
-					</div>
+					<label for="slide-1" class="carousel-control__custom carousel-control__custom--1"></label>
+					<label for="slide-2" class="carousel-control__custom carousel-control__custom--2"></label>
+					<label for="slide-3" class="carousel-control__custom carousel-control__custom--3"></label>
 				</div>
 			</div>
 			<section class="popular">
@@ -99,7 +96,7 @@
 				<a class="popular-link" href="#">
 					<article class="popular-item">
 						<div class="popular-img-block">
-							<img class="popular__img" src="img/monopode.png" alt="monopode">
+							<img class="popular__img popular__img--monopode" src="img/monopode.png" alt="monopode">
 						</div>
 						<h2 class="popular-item__title">Моноподы для&#160;селфи</h2>
 					</article>
@@ -139,24 +136,22 @@
 			</section>
 		</div>
 		<section class="service">
+			<input id="service-1" class="service-control__radio" name="service-control-radio" type="radio" checked /><input id="service-2" class="service-control__radio" name="service-control-radio" type="radio" /><input id="service-3" class="service-control__radio" name="service-control-radio" type="radio" />
 			<div class="service-control">
-				<div class="service-control-radio-group"><input class="service-control__radio" name="service-control-radio" type="radio" /><input class="service-control__radio" name="service-control-radio" type="radio" /><input class="service-control__radio" name="service-control-radio" type="radio" /></div>
-				<div class="service-control-radio-group-custom">
-					<div class="service-control__radio-custom">Доставка</div>
-					<div class="service-control__radio-custom">Гарантия</div>
-					<div class="service-control__radio-custom">Кредит</div>
-				</div>
+				<label for="service-1" class="service-control__custom">Доставка</label>
+				<label for="service-2" class="service-control__custom">Гарантия</label>
+				<label for="service-3" class="service-control__custom">Кредит</label>
 			</div>
 			<section class="service-list">
-				<section class="service-list-item">
+				<section class="service-list-item service-list-item--delivery">
 					<h2 class="service-list__title">Доставка</h2>
 					<p class="service-list__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 				</section>
-				<section class="service-list-item">
+				<section class="service-list-item service-list-item--warranty">
 					<h2 class="service-list__title">Гарантия</h2>
 					<p class="service-list__text">Если из-за купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом , конечно же.</p>
 				</section>
-				<section class="service-list-item">
+				<section class="service-list-item service-list-item--credit">
 					<h2 class="service-list__title">Кредит</h2>
 					<p class="service-list__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</section>

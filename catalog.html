@@ -11,9 +11,9 @@
 	<div class="container">
 		<header class="header"><a class="logo logo--header" href="index.html">device</a>
 			<div class="header-middle">
-				<form class="search"><input type="search" /><button class="search__button">Искать</button></form>
+				<form class="search-form"><input class="search-form__input" placeholder="Поиск по сайту" type="search" /><button class="search__button">Найти</button></form>
 				<nav class="user-nav user-nav--header">
-					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--header" href="#">Корзина</a></nav>
+					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--header" href="#">Корзина</a></nav>
 			</div>
 			<nav class="main-nav">
 				<ul class="nav-list">
@@ -49,14 +49,41 @@
 		</div>
 		<section class="shop">
 			<div class="left-column">
-				<section class="shop-filter"><span class="shop__title shop__title--filter">Фильтр</span>
+				<section class="shop-filter"><span class="shop__title shop__title--filter">Фильтр:</span>
 					<form class="filter-form" method="post">
 						<fieldset class="filter-group">
 							<legend class="filter__subtitle">Стоимость</legend><label class="filter__number"><input type="number"/>От 0</label><label class="filter__number"><input type="number"/>До 5000</label></fieldset>
-					<fieldset class="filter-group">
-							<legend class="filter__subtitle">Цвет</legend><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="black"/>Черный</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="white"/>Белый</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="blue"/>Синий</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="red"/>Красный</label><label class="filter-label"><input class="filter-color__checkbox" type="checkbox" name="color" value="pink"/>Розовый</label></fieldset>
 						<fieldset class="filter-group">
-							<legend class="filter__subtitle">Bluetooth</legend><label class="filter-label"><input class="filter__radio" type="radio" name="bluetooth" value="with-bluetooth"/>Есть</label><label class="filter-label"><input class="filter__radio" type="radio" name="bluetooth" value="without-bluetooth"/>Нет</label></fieldset>
+							<legend class="filter__subtitle">Цвет</legend>
+							<input class="filter-color__checkbox" type="checkbox" name="color" value="white" id="color-white"/>
+							<input class="filter-color__checkbox" type="checkbox" name="color" value="black" id="color-black"/>
+							<input class="filter-color__checkbox" type="checkbox" name="color" value="blue" id="color-blue"/>
+							<input class="filter-color__checkbox" type="checkbox" name="color" value="red" id="color-red"/>
+							<input class="filter-color__checkbox" type="checkbox" name="color" value="pink" id="color-pink"/>
+							<label class="filter-label" for="color-white">
+								Черный
+							</label>
+							<label class="filter-label" for="color-black">
+								Белый
+							</label>
+							<label class="filter-label" for="color-blue">
+								Синий
+							</label>
+							<label class="filter-label" for="color-red">
+								Красный
+							</label>
+							<label class="filter-label" for="color-pink">
+								Розовый
+							</label>
+						</fieldset>
+						<fieldset class="filter-group">
+							<legend class="filter__subtitle">Bluetooth</legend>
+							<input id="with-bluetooth" class="filter__radio" type="radio" name="bluetooth" value="with-bluetooth" checked/>	
+							<input id="without-bluetooth" class="filter__radio" type="radio" name="bluetooth" value="without-bluetooth"/>
+							<label for="with-bluetooth" class="filter-label--radio">Есть</label>	
+							<label for="without-bluetooth" class="filter-label--radio">Нет</label>
+						</fieldset>
+						<button name="show" class="button">Показать</button>
 					</form>
 				</section>
 			</div>
