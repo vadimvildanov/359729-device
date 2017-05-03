@@ -197,6 +197,29 @@
 				<div class="social"><a class="social__link social__link--fb" href="#">Facebook</a><a class="social__link social__link--insta" href="#">Instagramm</a><a class="social__link social__link--tw" href="#">Twitter</a></div><a class="html-academy" href="#">htmlacademy</a></div>
 		</div>
 	</footer>
+	
+	<div class="popup popup-close">
+		<form class="fb-form" action="echo" method="post">
+			<label class="fb-label">
+				Ваше имя
+				<input type="text" class="fb-who" placeholder="Представьтесь, пожалуйста" name="fb-name">
+			</label>
+			<label class="fb-label">
+				Ваш e-mail
+				<input type="email" class="fb-who" placeholder="Для отправки ответа" name="fb-email">
+			</label>
+			<label class="fb-label fb-label--textarea">
+				Текст письма
+				<textarea class="fb-text" placeholder="В свободной форме" name="fb-text" cols="50" rows="10"></textarea>
+			</label>
+			<button type="submit" class="button">Отправить</button>
+		</form>
+		<button type="button" class="popup-close">Закрыть</button>
+	</div>
+	<div class="popup popup-close">
+		<img class="popup-map" src="img/map-big.jpg" width="960" height="559">
+		<button type="button" class="popup-close">Закрыть</button>
+	</div>
 </body>
 
 </html>

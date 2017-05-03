@@ -2351,6 +2351,151 @@ body
             transform: rotate(90deg);
 }
 
+.popup {
+		padding: 0px;
+		width: 960px;
+		z-index: 5;
+		box-shadow: 0 12px 45px -10px black;
+		position: fixed;
+		top: 100px;
+		left: calc(50% - 480px);
+		background: white;
+	font-size: 0;
+}
+
+.popup-close {
+	display: none;
+}
+
+.popup-map {
+	z-index: 1;
+	position: relative;
+	vertical-align: middle;
+}
+
+.popup-close {
+	display: block;
+	z-index: 2;
+	border: none;
+	background: none;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 0;
+	background: #f0c52e;
+	opacity: 0.7;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	transition: all, 0.2s;
+}
+
+.popup-close:hover {
+	opacity: 1;
+}
+
+.popup-close:active:before,
+.popup-close:active:after {
+	background: #f5d76d;
+}
+
+.popup-close:after,
+.popup-close:before {
+	position: absolute;
+	content: "";
+	width: 31px;
+	height: 3px;
+	border-radius: 1px;
+	background: white;
+	left: 13px;
+	top: 27px;
+	transition: all 0.2s;
+}
+
+.popup-close:after {
+	transform: rotate(45deg);
+}
+
+.popup-close:before {
+	transform: rotate(-45deg);
+}
+
+.fb-form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 95px;
+		padding-bottom: 90px;
+}
+
+.fb-label {
+		display: inline-block;
+	  font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+		color: black;
+		width: 360px;
+}
+
+.fb-label--textarea {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 40px;
+}
+
+.fb-who {
+		width: 100%;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: none;
+		background: #f2f2f2;
+		margin-top: 10px;
+}
+
+.fb-who:placeholder {
+	color: #bababa;
+}
+
+.fb-text {
+		width: 100%;
+		max-width: 100%;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: none;
+		background: #f2f2f2;
+		margin-top: 10px;
+}
+
+
+.fb-who:hover,
+.fb-text:hover {
+	background: #eaeaea;
+}
+
+
+.fb-who:focus,
+.fb-text:focus {
+	outline: 3px solid #f7e296;
+	background: white;
+}
+
+.fb-who:invalid,
+.fb-text:invalid {
+	background: #f6dada;
+}
+
+.fb-text:placeholder {
+	color: #bababa;
+}
+
 
 /*
 .sprite {
