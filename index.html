@@ -14,7 +14,7 @@
 			<div class="header-middle">
 				<form class="search-form"><input class="search-form__input" placeholder="Поиск по сайту" type="search" /><button class="search__button">Найти</button></form>
 				<nav class="user-nav user-nav--header">
-					<div class="user-nav-profile user-nav-profile--header"><a class="user-nav-profile__link user-nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--header" href="#">Корзина</a></nav>
+					<div class="user-nav-profile user-nav-profile--header"><a class="nav-profile__link nav-profile__link--header" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--header" href="#">Корзина</a></nav>
 			</div>
 			<nav class="main-nav">
 				<ul class="nav-list">
@@ -22,7 +22,7 @@
 						<div class="nav-catalog">
 							<ul class="nav-catalog-list">
 								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Виртуальная реальность</a></li>
-								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Моноподы для селфи</a></li>
+								<li class="nav-catalog__item"><a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a></li>
 								<li class="nav-catalog__item"><a class="nav-catalog__link" href="#">Экшн камеры</a></li>
 							</ul>
 							<ul class="nav-catalog-list">
@@ -178,7 +178,9 @@
 				<section class="contacts">
 					<h2 class="contacts__title">Контакты</h2>
 					<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<a class="contacts-map"><img class="contacts-map__img" src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15" /></a><a class="description--button button" href="#">Напишите нам</a></section>
+					<a href="#" id="google-maps" class="contacts-map">
+						<img class="contacts-map" src="img/map.jpg" alt="Карта" width="560" height="222">
+					</a><a class="description--button button" id="write-us" href="#">Напишите нам</a></section>
 			</section>
 		</div>
 	</main>
@@ -186,7 +188,7 @@
 		<div class="container footer-container">
 			<div class="footer-top"><a class="logo logo--footer">Device</a>
 				<nav class="user-nav user-nav--footer">
-					<div class="user-nav-profile user-nav-profile--footer"><a class="user-nav-profile__link user-nav-profile__link--footer" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--footer" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--footer" href="#">Корзина</a></nav>
+					<div class="user-nav-profile user-nav-profile--footer"><a class="nav-profile__link nav-profile__link--footer" href="#">Войти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--footer" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--footer" href="#">Корзина</a></nav>
 			</div>
 			<div class="footer-middle">
 				<p class="footer-address">г. Москва, ул. Строителей, 15</p>
@@ -198,7 +200,7 @@
 		</div>
 	</footer>
 	
-	<div class="popup popup-close">
+	<div class="popup popup--fb">
 		<form class="fb-form" action="echo" method="post">
 			<label class="fb-label">
 				Ваше имя
@@ -212,14 +214,16 @@
 				Текст письма
 				<textarea class="fb-text" placeholder="В свободной форме" name="fb-text" cols="50" rows="10"></textarea>
 			</label>
-			<button type="submit" class="button">Отправить</button>
+			<button type="submit" class="button" name="send">Отправить</button>
 		</form>
 		<button type="button" class="popup-close">Закрыть</button>
 	</div>
-	<div class="popup popup-close">
-		<img class="popup-map" src="img/map-big.jpg" width="960" height="559">
+	<div class="popup popup--map">
+		<iframe class="popup-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12723.452468034493!2d37.521689190444285!3d55.6853387432919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1494006311111" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<button type="button" class="popup-close">Закрыть</button>
 	</div>
+
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
