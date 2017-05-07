@@ -573,25 +573,28 @@ body {
 	left: -60px;
 	z-index: 4;
 	    -ms-flex-pack: start;
-	padding-top: 16px;
-	min-height: 166px;
+	max-height: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
 	width: 1160px;
-	display: none;
-	transition: all .4s;
+	transition: all 0.7s;
+	background: #f8e294;
 
 	-webkit-box-pack: start;
 	        justify-content: flex-start;
 }
 
 .nav-list__item--catalog:hover .nav-catalog {
-	min-height: 170px;
-	background: #f8e294;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	padding-top: 16px;
+	max-height: 270px;
+	padding-bottom: 32px;
+	width: 1160px;
 }
 
 .nav-catalog-list {
+	margin-bottom: 10px;
 	margin-right: 0px;
 	padding: 0;
 	padding-left: 60px;
@@ -1352,6 +1355,7 @@ body {
 	font-weight: 700;
 	font-size: 18px;
 	font-family: Gilroy, Arial, sans-serif;
+	transition: all 0.3s;
 }
 
 .html-academy {
@@ -1405,9 +1409,18 @@ body {
 	position: relative;
 	margin-right: 18px;
 	padding-right: 20px;
-	color: rgba(0, 0, 0, .3);
+	color: rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.breadcrumbs__link:hover {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.breadcrumbs__link:active {
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .breadcrumbs__link::after {
