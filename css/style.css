@@ -1286,6 +1286,7 @@ body {
 
 .footer-bottom:before {
 	-ms-flex-order: -1;
+	display: block;
 	width: 80px;
 	height: 7px;
 	background: #ffc700;
