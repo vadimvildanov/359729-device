@@ -185,9 +185,9 @@ body {
 }
 
 .logo--header {
-	margin-top: -2px;
-	margin-bottom: 8px;
-	margin-left: -2px;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	margin-left: -3px;
 	color: #000;
 }
 
@@ -201,7 +201,7 @@ body {
 	flex-direction: column;
 	padding-right: 60px;
 	padding-left: 60px;
-	min-height: 205px;
+	min-height: 201px;
 	background-color: #f8e294;
 	box-shadow: inset 0 19px 0 0 #fff;
 	color: black;
@@ -239,7 +239,7 @@ body {
 .search-form::before {
 	position: absolute;
 	top: 17px;
-	left: 5px;
+	left: 2px;
 	display: block;
 	width: 18px;
 	height: 18px;
@@ -339,7 +339,7 @@ body {
 
 .header-middle {
 	-ms-flex-pack: justify;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 
 	-webkit-box-pack: justify;
 	justify-content: space-between;
@@ -354,7 +354,7 @@ body {
 }
 
 .user-nav__link {
-	display: inline-block;
+	display: block;
 	color: inherit;
 	line-height: 40px;
 	transition: opacity .2s;
@@ -389,7 +389,7 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	    -ms-flex-align: center;
-	width: 240px;
+	width: 242px;
 	line-height: 17px;
 
 	-webkit-box-align: center;
@@ -402,7 +402,7 @@ body {
 
 .nav-profile__link:first-child::before {
 	position: absolute;
-	top: 3px;
+	top: 2px;
 	left: 0;
 	width: 15px;
 	height: 13px;
@@ -424,7 +424,7 @@ body {
 }
 
 .nav-profile__link {
-	padding-left: 30px;
+	padding-left: 25px;
 	text-decoration: none;
 	font-weight: 300;
 	font-size: 15px;
@@ -471,8 +471,8 @@ body {
 }
 
 .user-nav__link--basket:before {
-	top: 15px;
-	left: 0;
+	top: 14px;
+	left: -3px;
 	width: 12px;
 	height: 12px;
 	background-position: -27px -5px;
@@ -679,8 +679,8 @@ body {
 
 .carousel-item:before {
 	position: absolute;
-	top: 50px;
-	right: 0;
+	top: 70px;
+	right: 18px;
 	z-index: 1;
 	color: white;
 	font-size: 180px;
@@ -738,6 +738,7 @@ body {
 .carousel-item__text {
 	font-size: 15px;
 	line-height: 30px;
+	letter-spacing: 0.1px;
 }
 
 .carousel-item__more {
@@ -752,13 +753,14 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	width: 100%;
 }
 
 .carousel-info__item {
 	margin-top: 50px;
-	width: 150px;
 	font-size: 13px;
 	line-height: 20px;
+	margin-right: 80px;
 
 	-ms-flex-item-align: stretch;
 	-ms-grid-row-align: stretch;
@@ -784,8 +786,8 @@ body {
 
 .carousel-control {
 	position: absolute;
-	right: 80px;
-	bottom: 160px;
+	right: 84px;
+	bottom: 157px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -793,7 +795,6 @@ body {
 	        flex-direction: row;
 	-ms-flex-pack: justify;
 	-ms-flex-align: center;
-	width: 80px;
 
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
@@ -812,6 +813,7 @@ body {
 	opacity: .3;
 	cursor: pointer;
 	transition: all .2s;
+	margin-left: 23px;
 }
 
 .carousel-control__custom:hover {
@@ -855,7 +857,7 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 36px;
+	margin-bottom: 34px;
 	width: 160px;
 	height: 160px;
 	background: #f8e294;
@@ -906,11 +908,12 @@ body {
 	font-size: 18px;
 	font-family: Gilroy, Arial, sans-serif;
 	line-height: 20px;
+	letter-spacing: 0.2px;
 }
 
 .service {
 	-ms-flex-pack: center;
-	margin-bottom: 90px;
+	margin-bottom: 95px;
 	min-height: 388px;
 	background: #e6e6e6;
 	box-shadow: inset 0 100px 0 0 #fff;
@@ -1084,10 +1087,13 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: justify;
-	margin-bottom: 88px;
 
 	-webkit-box-pack: justify;
 	justify-content: space-between;
+}
+
+.brands {
+	margin-bottom: 83px;
 }
 
 .brands__img {
@@ -1197,8 +1203,12 @@ body {
 	font-family: Gilroy, Arial, sans-serif;
 }
 
+.contacts__text {
+	margin-bottom: 37px;
+}
+
 .contacts-map {
-	display: inline-block;
+	display: block;
 }
 
 .contacts-map__img {
@@ -1207,7 +1217,7 @@ body {
 
 .footer {
 	margin-top: auto;
-	padding-top: 52px;
+	padding-top: 61px;
 	min-height: 323px;
 	background: #464646;
 	color: #fff;
@@ -1244,11 +1254,12 @@ body {
 	align-items: flex-start;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
+	margin-bottom: 8px;
 }
 
 .footer-middle {
 	-ms-flex-align: start;
-	margin-bottom: 60px;
+	margin-bottom: 45px;
 
 	-webkit-box-align: start;
 	align-items: flex-start;
@@ -1398,7 +1409,7 @@ body {
 }
 
 .main-header {
-	margin-top: 45px;
+	margin-top: 50px;
 	margin-bottom: 42px;
 	padding-right: 60px;
 	padding-left: 60px;
