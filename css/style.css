@@ -204,6 +204,7 @@ body {
 	min-height: 205px;
 	background-color: #f8e294;
 	box-shadow: inset 0 19px 0 0 #fff;
+	color: black;
 
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -247,21 +248,21 @@ body {
 }
 
 .search-form__input::-webkit-input-placeholder {
-	color: #000;
+	color: inherit;
 	font-size: 15px;
 	opacity: .3;
 	transition: opacity .4s;
 }
 
 .search-form__input:-ms-input-placeholder {
-	color: #000;
+	color: inherit;
 	font-size: 15px;
 	opacity: .3;
 	transition: opacity .4s;
 }
 
 .search-form__input::placeholder {
-	color: #000;
+	color: inherit;
 	font-size: 15px;
 	opacity: .3;
 	transition: opacity .4s;
@@ -305,7 +306,7 @@ body {
 	border: none;
 	border: 2px solid black;
 	background: transparent;
-	color: #000;
+	color: inherit;
 	font-weight: 300;
 	font-size: 15px;
 	font-family: Open-Sans, Arial, sans-serif;
@@ -345,7 +346,7 @@ body {
 }
 
 .user-nav {
-	color: black;
+	color: inherit;
 }
 
 .user-nav--footer {
@@ -1263,6 +1264,7 @@ body {
 
 	-webkit-box-pack: justify;
 	justify-content: space-between;
+	color: inherit;
 }
 
 .footer-info {
