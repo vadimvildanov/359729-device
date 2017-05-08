@@ -12,9 +12,9 @@
 	<div class="container">
 		<header class="header"><a class="logo logo--header" href="index.html">device</a>
 			<div class="header-middle">
-				<form class="search-form"><input class="search-form__input" placeholder="Поиск по сайту" type="search" /><button class="search__button">Найти</button></form>
-				<nav class="user-nav user-nav--header">
-					<div class="nav-profile nav-profile--header"><a href="#" class="nav-profile__link nav-profile--header">Валентин&nbsp;Петухов</a><a class="nav-profile__link nav-profile__link--header" href="#">Выйти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--header" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--header" href="#">Корзина</a></nav>
+				<form class="search-form" method="get"><input class="search-form__input" placeholder="Поиск по сайту" type="search" /><button class="search__button">Найти</button></form>
+				<nav class="user-nav">
+					<div class="nav-profile"><a href="#" class="nav-profile__link">Валентин&nbsp;Петухов</a><a class="nav-profile__link" href="#">Выйти</a></div><a class="user-nav__link user-nav__link--compare" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket" href="#">Корзина</a></nav>
 			</div>
 			<nav class="main-nav">
 				<ul class="nav-list">
@@ -51,7 +51,7 @@
 		<section class="shop">
 			<div class="left-column">
 				<section class="shop-filter"><span class="shop__title shop__title--filter">Фильтр:</span>
-					<form class="filter-form" method="post">
+					<form class="filter-form" method="post" action="echo">
 						<fieldset class="filter-group">
 							<legend class="filter__subtitle">Стоимость</legend>
 							<div class="range">
@@ -132,12 +132,12 @@
 						</article>
 					</section>
 					<section class="paginator">
-						<a class="button__paginator button__paginator--prev" href="#">Назад</a>
+						<a class="button__paginator" href="#">Назад</a>
 						<div class="paginator-numbers">
 							<a class="button__paginator-number button__paginator--active">1</a>
 							<a class="button__paginator-number" href="#">2</a>
 							<a class="button__paginator-number" href="#">3</a>
-						</div><a class="button__paginator button__paginator--next" href="#">Вперед</a>
+						</div><a class="button__paginator" href="#">Вперед</a>
 					</section>
 				</section>
 			</div>
@@ -145,9 +145,9 @@
 	</main>
 	<footer class="footer">
 		<div class="container footer-container">
-			<div class="footer-top"><a href="index.html" class="logo logo--footer">Device</a>
+			<div class="footer-top"><a href="index.html" class="logo">Device</a>
 				<nav class="user-nav user-nav--footer">
-					<div class="user-nav-profile user-nav-profile--footer"><a class="nav-profile__link nav-profile__link--footer" href="#">Выйти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--footer" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--footer" href="#">Корзина</a></nav>
+					<div class="user-nav-profile"><a class="nav-profile__link nav-profile__link--footer" href="#">Выйти</a></div><a class="user-nav__link user-nav__link--compare user-nav__link--footer" href="#">Сравнить</a><a class="user-nav__link user-nav__link--basket user-nav__link--footer" href="#">Корзина</a></nav>
 			</div>
 			<div class="footer-middle">
 				<div class="footer-address">г. Москва, ул. Строителей, 15</div>
