@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<title>Device</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/min-style.css" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="popup popup--fb popup-show">
+			<form class="fb-form" action="echo" method="post">
+				<label class="fb-label">
+					Ваше имя
+					<input type="text" class="fb-who" placeholder="Представьтесь, пожалуйста" name="fb-name">
+				</label>
+				<label class="fb-label">
+					Ваш e-mail
+					<input type="email" class="fb-who" placeholder="Для отправки ответа" name="fb-email">
+				</label>
+				<label class="fb-label fb-label--textarea">
+					Текст письма
+					<textarea class="fb-text" placeholder="В свободной форме" name="fb-text" cols="50" rows="10"></textarea>
+				</label>
+				<button type="submit" class="button" name="send">Отправить</button>
+			</form>
+			<button type="button" class="popup-close">Закрыть</button>
+		</div>
+	</body>
+</html>
