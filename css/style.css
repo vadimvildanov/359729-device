@@ -709,7 +709,7 @@ body {
 	margin-right: -10px;
 	width: 480px;
 	height: 440px;
-
+	z-index: 3;
 	-ms-flex-item-align: end;
 	align-self: flex-end;
 	-webkit-box-orient: vertical;
@@ -927,7 +927,7 @@ body {
 }
 
 .popular-item:active {
-	opacity: .3;
+	opacity: 0.3;
 }
 
 .popular-item__title {
