@@ -37,6 +37,11 @@ body {
 	line-height: 30px;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .main {
 	display: -webkit-box;
 	display: -ms-flexbox;
